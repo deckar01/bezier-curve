@@ -52,7 +52,17 @@ as spheres and the lines between neighboring points are rendered as cylinders.
 
 - **fn** `Integer` - See `bezier::bezier_curve`.
 
-## TODO
+## Development
+
+### Testing
+
+Run `./test.sh`. Test cases are in `tests/`.
+
+### Benchmarks
+
+Run `./benchmark.sh`. The test is in `benchmark/`.
+
+### TODO
 
 - Provide modules for constructing `polyhedron` meshes.
 - Investigate strategies for uniformly sampling curves.
