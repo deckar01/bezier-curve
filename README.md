@@ -30,7 +30,7 @@ set of control points.
 
 **Arguments**
 
-- **control_points** `Array<Vector<Float>>` - See `bezier::bezier_curve`.
+- **control_points** `Array<Vector<Float>>` - See [`bezier::bezier_curve`][0].
 
 - **t** `Float` - A "time" value in the unit interval `[0, 1]`. This value
     controls how far along the curve the sampled point lays, although the
@@ -48,9 +48,9 @@ as spheres and the lines between neighboring points are rendered as cylinders.
 
 **Arguments**
 
-- **control_points** `Array<Vector<Float>>` - See `bezier::bezier_curve`.
+- **control_points** `Array<Vector<Float>>` - See [`bezier::bezier_curve`][0].
 
-- **fn** `Integer` - See `bezier::bezier_curve`.
+- **fn** `Integer` - See [`bezier::bezier_curve`][0].
 
 ## Development
 
@@ -67,3 +67,5 @@ Run `./benchmark.sh`. The test is in `benchmark/`.
 - Provide modules for constructing `polyhedron` meshes.
 - Investigate strategies for uniformly sampling curves.
 - Investigate integrating a curve primitive into OpenSCAD.
+
+[0]: #bezierbezier_curvecontrol_points-fn
