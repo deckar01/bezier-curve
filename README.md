@@ -2,6 +2,8 @@
 
 A recursive implementation of bezier curves for OpenSCAD.
 
+![preview](./examples/example.png)
+
 ## Usage
 
 ### bezier::bezier_curve(control_points, fn)
