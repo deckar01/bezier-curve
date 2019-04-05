@@ -34,15 +34,15 @@ set of control points.
 - **Returns**
     - `Vector<Float>` - A point lying on the bezier curve.
 
-### preview::preview_bezier_curve(control_points, fn)
+### preview::preview_curve(curve, control_points)
 
 A module that renders a preview of a set of control points and the set of points
 lying on the bezier curve defined by those control points. Points are rendered
 as spheres and the lines between neighboring points are rendered as cylinders.
 
 - **Arguments**
+    - **curve** `Array<Vector<Float>>` - The points of the curve.
     - **control_points** `Array<Vector<Float>>` - See [`bezier::bezier_curve`][0].
-    - **fn** `Integer` - See [`bezier::bezier_curve`][0].
 
 ## Development
 

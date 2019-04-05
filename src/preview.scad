@@ -10,8 +10,7 @@ module preview_line(point1, point2, d) {
     cylinder(d=d, h=norm(vector), $fn=16);
 }
 
-module preview_bezier_curve(control_points, fn, d=1) {
-    curve = bezier_curve(control_points, fn);
+module preview_curve(curve, control_points, d=1) {
     for(point = curve) {
         color("yellow")
         translate(point)
