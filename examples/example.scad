@@ -12,6 +12,6 @@ control_points = [
 curve = bezier_curve(control_points, fn=32);
 preview_curve(curve, control_points);
 
-even_curve = resample_bezier(curve, control_points);
+uniform_curve = bezier_uniform(curve, control_points);
 translate([0, 0, 10])
-preview_curve(even_curve, control_points);
+preview_curve(uniform_curve, control_points);

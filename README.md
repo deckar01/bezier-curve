@@ -21,10 +21,10 @@ by a set of control points.
 - **Returns**
     - `Array<Vector<Float>>` - A set of points lying on the bezier curve.
 
-### bezier::resample_bezier(curve, control_points)
+### bezier::bezier_uniform(curve, control_points)
 
 A function that resamples the points on a bezier curve to produce points that
-are more evenly spaced.
+are more uniformly distributed.
 
 - **Arguments**
     - **points** `Array<Vector<Float>>` - The points of the curve.
@@ -53,7 +53,7 @@ lying on the bezier curve defined by those control points. Points are rendered
 as spheres and the lines between neighboring points are rendered as cylinders.
 
 - **Arguments**
-    - **curve** `Array<Vector<Float>>` - The points of the curve.
+    - **points** `Array<Vector<Float>>` - The points of the curve.
     - **control_points** `Array<Vector<Float>>` - See [`bezier::bezier_curve`][0].
 
 ## Development

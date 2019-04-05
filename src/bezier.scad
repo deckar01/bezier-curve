@@ -18,7 +18,7 @@ function bezier_curve(control_points, fn) = (
     ]
 );
 
-function resample_bezier(points, control_points) = [
+function bezier_uniform(points, control_points) = [
     let(fn = (len(points)-1))
     // Measure the distance that each point is into the curve.
     let(segment_lengths = distance_between(points))
