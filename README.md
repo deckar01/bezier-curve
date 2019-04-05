@@ -21,6 +21,18 @@ by a set of control points.
 - **Returns**
     - `Array<Vector<Float>>` - A set of points lying on the bezier curve.
 
+### bezier::resample_bezier(curve, control_points)
+
+A function that resamples the points on a bezier curve to produce points that
+are more evenly spaced.
+
+- **Arguments**
+    - **points** `Array<Vector<Float>>` - The points of the curve.
+    - **control_points** `Array<Vector<Float>>` - See [`bezier::bezier_curve`][0].
+- **Returns**
+    - `Array<Vector<Float>>` - An evenly spaced set of points lying on the
+        bezier curve.
+
 ### bezier::bezier_point(control_points, t)
 
 A function that samples a single point lying on the bezier curve defined by a
@@ -57,7 +69,6 @@ Run `./benchmark.sh`. The test is in `benchmark/`.
 ### TODO
 
 - Provide modules for constructing `polyhedron` meshes.
-- Investigate strategies for uniformly sampling curves.
 - Investigate integrating a curve primitive into OpenSCAD.
 
 [0]: #bezierbezier_curvecontrol_points-fn
