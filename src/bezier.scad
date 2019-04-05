@@ -1,12 +1,11 @@
-function bezier_left(P) = [for(i = [0:len(P)-2]) P[i]];
-function bezier_right(P) = [for(i = [1:len(P)-1]) P[i]];
+use <utils.scad>;
 
 function bezier_point(control_points, t) = (
     len(control_points) < 2 ? (
         control_points[0]
     ) : (
-        (1-t) * bezier_point(bezier_left(control_points), t) +
-        (t) * bezier_point(bezier_right(control_points), t)
+        (1-t) * bezier_point(slice(control_points, end=1), t) +
+        (t) * bezier_point(slice(control_points, start=1), t)
     )
 );
 
